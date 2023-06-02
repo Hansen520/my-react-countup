@@ -1,0 +1,41 @@
+{
+  "name": "my-react-countup",
+  "version": "1.0.0",
+  "description": "A React component wrapper around CountUp.js",
+  "scripts": {
+    "format": "prettier --write \"*.md\" \"src/**/*.ts\"  \"src/**/*.tsx\"",
+    "build": "rollup --bundleConfigAsCjs -c && tsc --emitDeclarationOnly --noEmit false --project src/tsconfig.json --outDir build",
+    "prepublishOnly": "yarn build",
+    "test": "jest",
+    "node": "node ./src/test.js"
+  },
+  "keywords": [],
+  "author": "none",
+  "license": "MIT",
+  "main": "build",
+  "files": [
+    "build/index.js",
+    "build/index.d.ts"
+  ],
+  "typings": "build/index.d.ts",
+  "peerDependencies": {
+    "react": ">= 16.3.0"
+  },
+  "dependencies": {
+    "@rollup/plugin-babel": "^6.0.3",
+    "countup.js": "^2.6.2"
+  },
+  "devDependencies": {
+    "@babel/code-frame": "^7.21.4",
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.21.5",
+    "@babel/template": "^7.21.9",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "acorn": "^8.8.2",
+    "fs-extra": "^11.1.1",
+    "rollup": "^3.23.0",
+    "typescript": "4.9.3"
+  }
+}
