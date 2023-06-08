@@ -2,7 +2,7 @@
  * @Author: Hansen
  * @Date: 2023-06-02 15:12:11
  * @LastEditors: Hansen
- * @LastEditTime: 2023-06-02 17:52:04
+ * @LastEditTime: 2023-06-06 17:19:47
  * @FilePath: \zsks-userd:\project\my-react-countup\src\Babel-test\10international-i18n.js
  * @Description: 国际化
  */
